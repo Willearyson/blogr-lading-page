@@ -23,20 +23,38 @@ header{
 .left-side{
     display: flex;
 }
+.menu-icons{
+    width: 500px;
+    height: 44px;
+}
+.menu-icons nav {
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 .menu-icons nav ul{
-    display: flex;   
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:0;
+    padding: 0;   
 }
 .menu-icons nav ul li{
     list-style: none;
     cursor:pointer;
-    margin-right: 50px;
     color: rgb(226, 225, 225);
     font-family: var(--ubuntu-letter);
     font-weight: 600;
+    margin: 0;
+    padding: 0;
 }
 .menu-icons nav ul li:hover{
     text-decoration: underline;
 }
+
 .states,.states-company,.states-product,.states-mobile,.states-company-mobile,.states-product-mobile{
     display: none;
 }
@@ -49,7 +67,7 @@ header{
     flex-direction: column;
     padding-left: 30px;
     top: 108px;
-    left: 384px;
+    left: auto;
     border-radius: 5px;
     padding-left: 20px;
 }
@@ -88,7 +106,7 @@ header{
     flex-direction: column;
     padding-left: 30px;
     top: 108px;
-    left: 269px;
+    left: auto;
     border-radius: 5px;
     padding-left: 20px;
 }
@@ -126,7 +144,7 @@ header{
     flex-direction: column;
     padding-left: 30px;
     top: 108px;
-    left: 133px;
+    left: auto;
     border-radius: 5px;
     padding-left: 20px;
 }
@@ -207,12 +225,8 @@ header{
     background-color: #FFF;
 }
 .area-menu-mobile-general{
-   
-    width: 100%;
-    height: 100%; 
-    position: absolute;
-    top: 121px;
-    left: 0;
+    display: none; 
+
 }
 .menu-mobile{
     width: 90%;
@@ -512,6 +526,16 @@ footer{
         width: 90%;
         padding-left: 8px;
         padding-right: 8px;
+    }
+    .area-menu-mobile-general{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 121px;
+        left: 0;
+    }
+    .menu-mobile{
+        display: flex;
     }
     main h1{
         font-size: 37px;
